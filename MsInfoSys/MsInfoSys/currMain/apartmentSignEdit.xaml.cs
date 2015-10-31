@@ -29,7 +29,7 @@ namespace MsInfoSys.currMain
         public List<String> MajorLstSource { get; set; }
         public string MajorLstSelect { get; set; }
         /// 构造方法       
-        public void apartmentSign()
+        public apartmentSignEdit()
         {
             InitializeComponent();
             GradeLstSource = new List<string>() { "全部" };
@@ -76,7 +76,7 @@ namespace MsInfoSys.currMain
         private void GetGrade()
         {
             /// 构造查询字符串
-            string sql = "select class_name  from class";
+            string sql = "select grade_name  from grade";
 
             MySqlDataAdapter mda = new MySqlDataAdapter(sql, DBHelper.MySQLStr);
 
